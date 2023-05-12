@@ -6,6 +6,7 @@
 <jsp:useBean id="noticeVo" class="com.gga.vo.NoticeVo"/>
 <jsp:setProperty property="*" name="noticeVo"/>
 
+
 <%
 	NoticeDao noticeDao = new NoticeDao();
 	int result = noticeDao.insert(noticeVo);
