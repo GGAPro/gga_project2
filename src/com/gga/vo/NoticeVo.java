@@ -47,7 +47,7 @@ public class NoticeVo {
 		this.ndate = ndate;
 	}
 	
-	
+
 	
 	
 }

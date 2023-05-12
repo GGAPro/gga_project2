@@ -25,5 +25,6 @@ public class NoticeDao extends DBConn{
 		return result;
 		
 		
+		
 	}
 }
