@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GGA_Test1</title>
-<link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<title>gga_test2</title>
+<link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<!-- 부트스트랩 -->
@@ -146,7 +146,7 @@ function writeReset(){
 
 	<!-- footer -->
 	<footer>
-		<iframe src="http://localhost:9000/gga_test1/footer.jsp"
+		<iframe src="http://localhost:9000/gga_test2/footer.jsp"
 			scrolling="no" width="100%" height="600px" frameborder=0></iframe>	
 	</footer>
 	<!-- footer -->

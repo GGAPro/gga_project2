@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GGA_Test1</title>
-<link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<title>gga_test2</title>
+<link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<!-- 부트스트랩 -->
 </head>
@@ -31,17 +31,17 @@
 			<div class="header_section1">
 		      	
 		      	<div class="header_logo">
-		        	<a href="http://localhost:9000/gga_test1/index.jsp" target="_parent">
-		        	<img src="http://localhost:9000/gga_test1/images/newlogo.png"></a>
+		        	<a href="http://localhost:9000/gga_test2/index.jsp" target="_parent">
+		        	<img src="http://localhost:9000/gga_test2/images/newlogo.png"></a>
 		      	</div>
 		      	
 		      	<div class="header_menu">
 		      	<ul>
-			        <li><a href="http://localhost:9000/gga_test1/login/login.jsp" target="_parent" 
+			        <li><a href="http://localhost:9000/gga_test2/login/login.jsp" target="_parent" 
 			        	>로그인</a></li>
-					<li><a href="http://localhost:9000/gga_test1/join/join.jsp" target="_parent" 
+					<li><a href="http://localhost:9000/gga_test2/join/join.jsp" target="_parent" 
 						>회원가입</a></li>
-					<li><a href="http://localhost:9000/gga_test1/mypage/mypage.jsp" target="_parent" 
+					<li><a href="http://localhost:9000/gga_test2/mypage/mypage.jsp" target="_parent" 
 						>마이페이지</a></li>
 					<li><a href="#">고객센터</a></li>
 		      	</ul>
@@ -51,24 +51,24 @@
 			<div class="header_section2">
 				<div class="header_menu2">
 				<ul>
-				      <li><a href="http://localhost:9000/gga_test1/movie/movie_menu.jsp" target="_parent">
+				      <li><a href="http://localhost:9000/gga_test2/movie/movie_menu.jsp" target="_parent">
 				     	영화</a></li>
-				      <li><a href="http://localhost:9000/gga_test1/order/order.jsp" target="_parent">
+				      <li><a href="http://localhost:9000/gga_test2/order/order.jsp" target="_parent">
 				      	예매</a></li>
 			      	  <li class="dropdown">
 			          <a class="dropdown-toggle-split" href="#" role="button" 
 			         	 data-bs-toggle="dropdown" aria-expanded="false">
 			         	 게시판</a>
 				          <ul class="dropdown-menu">
-				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/notice/notice_list.jsp"
+				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test2/notice/notice_list.jsp"
 				            	target="_parent">공지사항</a></li>
-				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/board/board_list.jsp" 
+				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test2/board/board_list.jsp" 
 				            	target="_parent">커뮤니티</a></li>
-				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test1/board/faq.jsp"
+				            <li><a class="dropdown-item" href="http://localhost:9000/gga_test2/board/faq.jsp"
 				            	target="_parent">FAQ</a></li>
 				     </ul>
 				     </li>
-				      <li><a href="http://localhost:9000/gga_test1/coronation/coronation.jsp" target="_parent">
+				      <li><a href="http://localhost:9000/gga_test2/coronation/coronation.jsp" target="_parent">
 				      대관문의</a></li>
 				      <li><a href="#">
 				      스토어</a></li>

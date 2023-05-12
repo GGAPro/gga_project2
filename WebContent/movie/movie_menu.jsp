@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GGA_Test1</title>
-<link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<title>gga_test2</title>
+<link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />	
@@ -97,19 +97,19 @@
 	<!-- content -->
 	<div class="container">
 		<div class="movie_titleimg">
-		<img src="http://localhost:9000/gga_test1/images/movietitle.png">
+		<img src="http://localhost:9000/gga_test2/images/movietitle.png">
 		</div>
 		<nav class="buttons">
-		<a href="http://localhost:9000/gga_test1/movie/movie_menu.jsp"><img src="http://localhost:9000/gga_test1/images/moviechart.png" class="btn-outline-secondary"></a>
-		<a href="http://localhost:9000/gga_test1/movie/commingsoon.jsp"><img src="http://localhost:9000/gga_test1/images/commingsoon2.png" class="btn-outline-secondary2"></a>
-			<!-- <button type="button" class="btn btn-outline-secondary" id="moviechart"><a href="http://localhost:9000/gga_test1/movie/movie_menu.jsp">무비차트</a></button>
-			<button type="button" class="btn btn-outline-secondary"><a href="http://localhost:9000/gga_test1/movie/commingsoon.jsp">커밍쑨</a></button> -->
+		<a href="http://localhost:9000/gga_test2/movie/movie_menu.jsp"><img src="http://localhost:9000/gga_test2/images/moviechart.png" class="btn-outline-secondary"></a>
+		<a href="http://localhost:9000/gga_test2/movie/commingsoon.jsp"><img src="http://localhost:9000/gga_test2/images/commingsoon2.png" class="btn-outline-secondary2"></a>
+			<!-- <button type="button" class="btn btn-outline-secondary" id="moviechart"><a href="http://localhost:9000/gga_test2/movie/movie_menu.jsp">무비차트</a></button>
+			<button type="button" class="btn btn-outline-secondary"><a href="http://localhost:9000/gga_test2/movie/commingsoon.jsp">커밍쑨</a></button> -->
 		</nav>
 		<nav class="menu1">
 			<div class="row">
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test1/images/inception.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/inception.jpg" class="card-img-top" alt="...">
 					  <div class="card-body">
 					    <h5 class="card-title">인셉션</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -117,14 +117,14 @@
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <br>
-					    <a href="http://localhost:9000/gga_test1/order/order.jsp">
+					    <a href="http://localhost:9000/gga_test2/order/order.jsp">
 							<img class="orderbtn" src="../images/neworderbtn.png"></a>
 					  </div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test1/images/darkknight.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/darkknight.jpg" class="card-img-top" alt="...">
 					  <div class="card-body">
 					    <h5 class="card-title">다크 나이트 라이즈</h5>
 					    <p class="card-text">개봉일 : 2020.01.01</p>
@@ -133,14 +133,14 @@
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <br>
-					    <a href="http://localhost:9000/gga_test1/order/order.jsp">
+					    <a href="http://localhost:9000/gga_test2/order/order.jsp">
 							<img class="orderbtn" src="../images/neworderbtn.png"></a>
 					  </div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test1/images/suzume.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/suzume.jpg" class="card-img-top" alt="...">
 					  <div class="card-body">
 					    <h5 class="card-title">스즈메의 문단속</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -150,7 +150,7 @@
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <br>
-					    <a href="http://localhost:9000/gga_test1/order/order.jsp">
+					    <a href="http://localhost:9000/gga_test2/order/order.jsp">
 							<img class="orderbtn" src="../images/neworderbtn.png"></a>
 					  </div>
 					</div>
@@ -160,7 +160,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test1/images/rings.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/rings.jpg" class="card-img-top" alt="...">
 					  <div class="card-body">
 					    <h5 class="card-title">반지의 제왕</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -168,14 +168,14 @@
 					    <span class="material-symbols-outlined">directions_car</span>
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <br>
-					    <a href="http://localhost:9000/gga_test1/order/order.jsp">
+					    <a href="http://localhost:9000/gga_test2/order/order.jsp">
 							<img class="orderbtn" src="../images/neworderbtn.png"></a>
 					  </div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test1/images/dune.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/dune.jpg" class="card-img-top" alt="...">
 					  <div class="card-body">
 					    <h5 class="card-title">듄</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -183,14 +183,14 @@
 					    <span class="material-symbols-outlined">directions_car</span>
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <br>
-					    <a href="http://localhost:9000/gga_test1/order/order.jsp">
+					    <a href="http://localhost:9000/gga_test2/order/order.jsp">
 							<img class="orderbtn" src="../images/neworderbtn.png"></a>
 					  </div>
 					</div>
 				</div>
 				<div class="col">
 				<div class="card" >
-				  <img src="http://localhost:9000/gga_test1/images/slamdunk.jpg" class="card-img-top" alt="...">
+				  <img src="http://localhost:9000/gga_test2/images/slamdunk.jpg" class="card-img-top" alt="...">
 				  <div class="card-body">
 				    <h5 class="card-title">더 퍼스트 슬램덩크</h5>
 				    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -198,7 +198,7 @@
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <span class="material-symbols-outlined">directions_car</span>
 					   <br>
-				    <a href="http://localhost:9000/gga_test1/order/order.jsp">
+				    <a href="http://localhost:9000/gga_test2/order/order.jsp">
 							<img class="orderbtn" src="../images/neworderbtn.png"></a>
 				  </div>
 				</div>
@@ -213,7 +213,7 @@
 
 	<!-- footer -->
 	<footer>
-		<iframe src="http://localhost:9000/gga_test1/footer.jsp"
+		<iframe src="http://localhost:9000/gga_test2/footer.jsp"
 			scrolling="no" width="100%" height="600px" frameborder=0></iframe>	
 	</footer>
 	<!-- footer -->

@@ -10,7 +10,7 @@
 
 header{
 	font-family: 'GangwonEdu_OTFBoldA';
-	background-image:url("http://localhost:9000/gga_test1/images/bgheaderai.png");
+	background-image:url("http://localhost:9000/gga_test2/images/bgheaderai.png");
 	background-repeat:no-repeat;
 	/* background-size:1000px 150px; */
  	background-size: 100%; 
@@ -345,7 +345,7 @@ margin-top:50px;
   color : rgb(37, 37, 37);
   font-size: 15px;
   padding : 12px 20px;
-	background-image:url("http://localhost:9000/gga_test1/images/ticket2.png");
+	background-image:url("http://localhost:9000/gga_test2/images/ticket2.png");
 	background-repeat: no-repeat;
 	background-size: 1000px 300px;
 	height:300px;
@@ -380,7 +380,7 @@ color:gray;
   color : rgb(37, 37, 37);
   font-size: 15px;
   padding : 12px 20px;
-	background-image:url("http://localhost:9000/gga_test1/images/ticket2.png");
+	background-image:url("http://localhost:9000/gga_test2/images/ticket2.png");
 	background-repeat: no-repeat;
 	background-size: 1000px 300px;
 	height:300px;
@@ -470,7 +470,7 @@ height:100px;
   color : rgb(37, 37, 37);
   font-size: 15px;
   padding : 12px 20px;
-	background-image:url("http://localhost:9000/gga_test1/images/ticket2.png");
+	background-image:url("http://localhost:9000/gga_test2/images/ticket2.png");
 	background-repeat: no-repeat;
 	background-size: 1000px 300px;
 	height:300px;
@@ -485,7 +485,7 @@ margin-top:50px;
   color : rgb(37, 37, 37);
   font-size: 15px;
   padding : 12px 20px;
-	background-image:url("http://localhost:9000/gga_test1/images/ticket2.png");
+	background-image:url("http://localhost:9000/gga_test2/images/ticket2.png");
 	background-repeat: no-repeat;
 	background-size: 1000px 300px;
 	height:300px;

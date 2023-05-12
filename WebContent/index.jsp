@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GGA_Test1</title>
-<link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<title>gga_test2</title>
+<link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -60,7 +60,7 @@
 		<div class="section1">
 			<div class="col" >
 			<div class="ggamovietitle">
-			    <img src="http://localhost:9000/gga_test1/images/ggamovietitle.png">
+			    <img src="http://localhost:9000/gga_test2/images/ggamovietitle.png">
 			    </div>
 			    <iframe justify-content-center width="100%" height="500px" 
 			    src="https://www.youtube.com/embed/cGNUpsevAk4?mute=1&autoplay=1"></iframe>
@@ -69,68 +69,68 @@
 		
 		<div class="section2">
 		 		<div class="nowtitle">
-			    <img src="http://localhost:9000/gga_test1/images/nowtitle.png">
+			    <img src="http://localhost:9000/gga_test2/images/nowtitle.png">
 			    </div>
 		 	<div class="row row-cols-1 row-cols-md-5 mb-5 justify-content-center">
 		 		<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			    		<a href="http://localhost:9000/gga_test1/movieinfo/johnwick2.jsp">
-				        	<img src="http://localhost:9000/gga_test1/images/darkknight.jpg" 
+			    		<a href="http://localhost:9000/gga_test2/movieinfo/johnwick2.jsp">
+				        	<img src="http://localhost:9000/gga_test2/images/darkknight.jpg" 
 				        		class="card-img-top" alt="..."></a>
 			        	<div class="card-body">
 			          	<p class="card-text">다크나이트</p>
-			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
-						<img src="http://localhost:9000/gga_test1/images/neworderbtn.png"></a>
+			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test2/images/neworderbtn.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			        	<img src="http://localhost:9000/gga_test1/images/dune.jpg" 
+			        	<img src="http://localhost:9000/gga_test2/images/dune.jpg" 
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">듄</p>
-			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
-						<img src="http://localhost:9000/gga_test1/images/neworderbtn.png"></a>
+			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test2/images/neworderbtn.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			        	<img src="http://localhost:9000/gga_test1/images/inception.jpg" 
+			        	<img src="http://localhost:9000/gga_test2/images/inception.jpg" 
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">인셉션</p>
-			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
-						<img src="http://localhost:9000/gga_test1/images/neworderbtn.png"></a>
+			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test2/images/neworderbtn.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			        	<img src="http://localhost:9000/gga_test1/images/slamdunk.jpg" 
+			        	<img src="http://localhost:9000/gga_test2/images/slamdunk.jpg" 
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">슬램덩크</p>
-			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
-						<img src="http://localhost:9000/gga_test1/images/neworderbtn.png"></a>
+			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test2/images/neworderbtn.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			        	<img src="http://localhost:9000/gga_test1/images/suzume.jpg" 
+			        	<img src="http://localhost:9000/gga_test2/images/suzume.jpg" 
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">스즈메</p>
-			          	<a href="http://localhost:9000/gga_test1/order/order.jsp" class="orderbtn">
-						<img src="http://localhost:9000/gga_test1/images/neworderbtn.png"></a>
+			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
+						<img src="http://localhost:9000/gga_test2/images/neworderbtn.png"></a>
 			        	</div>
 			     	</div>
 		    	</div>
 		    	<!-- <div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			        	<img src="http://localhost:9000/gga_test1/images/rings.jpg" 
+			        	<img src="http://localhost:9000/gga_test2/images/rings.jpg" 
 			        		class="card-img-top" alt="...">
 			        	<div class="card-body">
 			          	<p class="card-text">반지의 제왕</p>
@@ -145,13 +145,13 @@
 			  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
 				  <div class="carousel-inner">
 				    <div class="carousel-item active">
-				      <img src="http://localhost:9000/gga_test1/images/bannerimg2.jpg" class="d-block w-100" style="height: 200px;" alt="...">
+				      <img src="http://localhost:9000/gga_test2/images/bannerimg2.jpg" class="d-block w-100" style="height: 200px;" alt="...">
 				    </div>
 				  <div class="carousel-item">
-				      <img src="http://localhost:9000/gga_test1/images/bannerimg3.jpg" class="d-block w-100" style="height: 200px;" alt="...">
+				      <img src="http://localhost:9000/gga_test2/images/bannerimg3.jpg" class="d-block w-100" style="height: 200px;" alt="...">
 				  </div>
 				    <div class="carousel-item">
-				      <img src="http://localhost:9000/gga_test1/images/footerimg2.jpg" class="d-block w-100" style="height: 200px;" alt="...">
+				      <img src="http://localhost:9000/gga_test2/images/footerimg2.jpg" class="d-block w-100" style="height: 200px;" alt="...">
 				    </div>
 				  </div>
 				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -169,7 +169,7 @@
 			<div class="row">
 			    <!-- <h1 class="display-4">오시는길</h1> -->
 			    <div class="mapimg">
-			    <img src="http://localhost:9000/gga_test1/images/map.png">
+			    <img src="http://localhost:9000/gga_test2/images/map.png">
 			    </div>
 			</div>
 			<div class="row">
@@ -191,7 +191,7 @@
 
 	<!-- footer -->
 	<footer>
-		<iframe src="http://localhost:9000/gga_test1/footer.jsp"
+		<iframe src="http://localhost:9000/gga_test2/footer.jsp"
 			scrolling="no" width="100%" height="600px" frameborder=0></iframe>	
 	</footer>
 	<!-- footer -->

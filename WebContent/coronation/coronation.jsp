@@ -64,7 +64,7 @@
 	<!-- content:송지웅  -->
 
 	<!-- footer -->
-	<iframe src="http://localhost:9000/gga_test1/footer.jsp"
+	<iframe src="http://localhost:9000/gga_test2/footer.jsp"
 			scrolling="no" width="100%" height="600px" frameborder=0></iframe>	
 	<!-- footer -->	
 

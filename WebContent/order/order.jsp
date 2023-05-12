@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GGA_Test1</title>
+<title>gga_test2</title>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
 <script src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
-<link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
+<link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -39,7 +39,7 @@
 	<!-- content -->
 	<div class="container">
 		<div class="order_title">
-		<img src="http://localhost:9000/gga_test1/images/ordertitle.png">
+		<img src="http://localhost:9000/gga_test2/images/ordertitle.png">
 		</div>
 		
 		<div class="ticket_bac1">
@@ -91,10 +91,10 @@
 		</div>
 		
 		<div class="ticket_button" onclick="requestcardPay()">
-		<a><img src="http://localhost:9000/gga_test1/images/neworderbtn.png"></a>
+		<a><img src="http://localhost:9000/gga_test2/images/neworderbtn.png"></a>
 		</div>
 		<div class="kakaopay_button" onclick="requestkakaoPay()">
-		<a><img src="http://localhost:9000/gga_test1/images/kakaopay.png"></a>
+		<a><img src="http://localhost:9000/gga_test2/images/kakaopay.png"></a>
 		</div>
 	</div>
 	<!-- content -->
@@ -102,7 +102,7 @@
 
 	<!-- footer -->
 	<footer>
-		<iframe src="http://localhost:9000/gga_test1/footer.jsp"
+		<iframe src="http://localhost:9000/gga_test2/footer.jsp"
 			scrolling="no" width="100%" height="600px" frameborder=0></iframe>	
 	</footer>
 	<!-- footer -->
@@ -136,11 +136,11 @@
                 buyer_tel : '010-1234-5678',
                 buyer_addr : '서울특별시 강남구 삼성동',
                 buyer_postcode : '123-456',
-	            /* m_redirect_url: "http://localhost:9000/gga_test1/order/ordercon.jsp"  */
+	            /* m_redirect_url: "http://localhost:9000/gga_test2/order/ordercon.jsp"  */
             }, function (rsp) { // callback
                 if (rsp.success) {
                     console.log(rsp);
-                   location.href="http://localhost:9000/gga_test1/order/ordercon.jsp";
+                   location.href="http://localhost:9000/gga_test2/order/ordercon.jsp";
                     
                 } else {
                     console.log(rsp);
@@ -162,11 +162,11 @@
                 buyer_tel : '010-1234-5678',
                 buyer_addr : '서울특별시 강남구 삼성동',
                 buyer_postcode : '123-456',
-	            /* m_redirect_url: "http://localhost:9000/gga_test1/order/ordercon.jsp"  */
+	            /* m_redirect_url: "http://localhost:9000/gga_test2/order/ordercon.jsp"  */
             }, function (rsp) { // callback
                 if (rsp.success) {
                     console.log(rsp);
-                   location.href="http://localhost:9000/gga_test1/order/ordercon.jsp";
+                   location.href="http://localhost:9000/gga_test2/order/ordercon.jsp";
                     
                 } else {
                     console.log(rsp);

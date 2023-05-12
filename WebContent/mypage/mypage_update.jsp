@@ -5,12 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지 - 내 정보 수정</title>
-<link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css">
+<link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css">
 <script src= "../js/gga_javascript.js"></script>
 </head>
 <body>
 	<!-- Header -->
-	<iframe src= "http://localhost:9000/gga_test1/header.jsp" scrolling= "no" width= "100%" height= "149px" frameborder= 0></iframe>
+	<iframe src= "http://localhost:9000/gga_test2/header.jsp" scrolling= "no" width= "100%" height= "149px" frameborder= 0></iframe>
 	<!-- Header -->
 	
 	<!-- Content -->
@@ -90,7 +90,7 @@
 	</div>
 	
 	<!-- Footer -->
-	<iframe src= "http://localhost:9000/gga_test1/footer.jsp" scrolling= "no" width= "100%" height= "500px" frameborder= 0></iframe>
+	<iframe src= "http://localhost:9000/gga_test2/footer.jsp" scrolling= "no" width= "100%" height= "500px" frameborder= 0></iframe>
 	<!-- Footer -->
 </body>
 </html>
