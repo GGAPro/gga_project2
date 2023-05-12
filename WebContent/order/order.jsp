@@ -42,28 +42,50 @@
 		<img src="http://localhost:9000/gga_test2/images/ordertitle.png">
 		</div>
 		
-		<div class="ticket_bac1">
 	
-		<select class="ticket_movie">
+  	
+	<div class="ticket_bac1">
+	<article class="cont-select">
+        <button class="btn-select">영화를 선택해 주세요.</button>
+        <ul class="list-member">
+            <li><button type="button">인셉션</button></li>
+            <li><button type="button">다크 나이트 라이즈</button></li>
+            <li><button type="button">스즈메의 문단속</button></li>
+            <li><button type="button">반지의 제왕</button></li>
+            <li><button type="button">듄</button></li>
+            <li><button type="button">더 퍼스트 슬램덩크</button></li>
+        </ul>
+    </article>
+		<!-- <select class="ticket_movie">
 			<option value="default">영화를 선택해 주세요.</option>
-			<option value="king">반지의 제왕</option>
-			<option value="harry">해리포터</option>
-			<option value="slamdunk">슬램덩크</option>
-			<option value="seven">7번방의 선물</option>
-		</select>
-		<br>
+			<option value="inception">인셉션</option>
+			<option value="theDarkKnightRises">다크 나이트 라이즈</option>
+			<option value="suzume">스즈메의 문단속</option>
+			<option value="theLordoftheRings">반지의 제왕</option>
+			<option value="dune">듄</option>
+			<option value="slamdunk">더 퍼스트 슬램덩크</option>
+		</select> -->
 		<input type="date" id="start" name="trip-start"
 	       value="2023-04-26"
 	       min="2023-04-01" max="2023-05-31">
 	       
-	    <select class="ticket_time">
+	  <!--   <select class="ticket_time">
 			<option value="default">시간</option>
 			<option value="10">10:00</option>
 			<option value="12">12:00</option>
 			<option value="14">14:00</option>
 			<option value="1730">17:30</option>
-		</select>
-		<br>
+		</select> -->
+			<article class="time-select">
+        <button class="btn-timeselect">시간</button>
+        <ul class="list-ordertime">
+            <li><button type="button">10:00</button></li>
+            <li><button type="button">12:00</button></li>
+            <li><button type="button">14:00</button></li>
+            <li><button type="button">17:30</button></li>
+        </ul>
+    </article>
+    <br>
 		<p class="ticket_price">30,000원</p>
 		</div>
 		
@@ -175,6 +197,30 @@
                 }
             });
         }
+        
+        const btn = document.querySelector('.btn-select');
+        const list = document.querySelector('.list-member');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                btn.innerText = event.target.innerText;
+                btn.classList.remove('on');
+            }
+        });
+
+        const timebtn = document.querySelector('.btn-timeselect');
+        const timelist = document.querySelector('.list-ordertime');
+        timebtn.addEventListener('click', () => {
+            timebtn.classList.toggle('on');
+        });
+        timelist.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                timebtn.innerText = event.target.innerText;
+                timebtn.classList.remove('on');
+            }
+        });
     </script>
 </body>
 </html>

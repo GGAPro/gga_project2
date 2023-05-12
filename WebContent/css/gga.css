@@ -211,7 +211,7 @@ font-size:11pt;
 /*******************************
  로그인 페이지
 *************************************/
- .container{
+  .container{
 	font-family: 'GangwonEdu_OTFBoldA';
 } 
 
@@ -301,31 +301,208 @@ div.content section.coron_1 div.con {
 	margin-top:130px;
 }
 /* 대관문의 - 내용 */
-div.content section.coron_2 { /* section 고정  */
-	border:1px solid orange;
-	width:1000px; height:600px;
+	.ask_title img{
+	width:300px;
+	height:100px;
+	}
+div.container section.coron_2 { /* section 고정  */
+	width:1000px; height:300px;
 	margin:auto;
 	position:relative;
 	
 }
-div.content section.coron_2 div {
+/* div.container section.coron_2 div {
 	border:1px solid blue;
 	width:28%; height:30%;
 	display:inline-block;
 	text-align:center;
 	margin:15px;
-}
-div.content section.coron_2 div:first-child {
-	margin-left:20px;
-}
-div.content section.coron_2 div:nth-child(4) {
+} */
+
+div.container section.coron_2 div:nth-child(4) {
 	border:1px solid red;
 	margin-left:150px;
 	width:70%;
 	text-align:left;
 }
+.coron_input ul li input{
+	margin-left:15px;
+	margin-right:15px;
+}
+.coron_input textarea{
+	margin-left:15px;
+	width:400px;
+	height:100px;
+	border:1px solid lightgray;
+}
+.corondetail img{
+	display:block;
+	width:1000px;
+}
 
-/* 대관문의 */
+
+/*예매*/
+
+ 		.cont-select {
+ 		display:inline-block;
+            position: relative;
+            margin-left:80px;
+            margin-top:120px;
+            width: 200px;
+        }
+
+        .btn-select {
+        list-style-type:circle;
+            width: 100%;
+            padding: 13px 30px 13px 14px;
+/*             font-size: 15px; */
+            line-height: 15px;
+            background-color: #fff;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+        /*     background: url("images/icon-Triangle-down.png") center right 14px no-repeat; */
+            /* 말줄임 */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .btn-select:hover,
+        .btn-select:focus {
+            border: 1px solid #9B51E0;
+            outline: 3px solid #F8E4FF;
+        }
+
+        .list-member {
+       		background-color:white;
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 49px;
+            left: 0;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        .btn-select.on {
+           /*  background: url("images/icon-Triangle-up.png") center right 14px no-repeat; */
+        }
+
+        .btn-select.on+.list-member {
+            display: block;
+        }
+
+        .list-member li {
+        	list-style-type:circle;
+            height: 40px;
+            padding: 5px 8px;
+            box-sizing: border-box;
+        }
+
+        .list-member li button {
+            width: 100%;
+            padding: 7px 10px;
+            border: none;
+            background-color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            /* 말줄임 */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .list-member li button:hover,
+        .list-member li button:focus {
+            background-color: #F8E4FF;
+        }
+        
+            .time-select{
+            display:inline-block;
+            position: relative;
+            margin-left:40px;
+            margin-top:20px;
+            width: 100px;
+        
+        }
+        
+         .btn-timeselect {
+        list-style-type:circle;
+            width: 100%;
+            padding: 13px 30px 13px 14px;
+/*             font-size: 15px; */
+            line-height: 15px;
+            background-color: #fff;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+        /*     background: url("images/icon-Triangle-down.png") center right 14px no-repeat; */
+            /* 말줄임 */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .btn-timeselect:hover,
+        .btn-timeselect:focus {
+            border: 1px solid #9B51E0;
+            outline: 3px solid #F8E4FF;
+        }
+
+        .list-ordertime {
+        background-color:white;
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 49px;
+            left: 0;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+
+        .btn-timeselect.on {
+           /*  background: url("images/icon-Triangle-up.png") center right 14px no-repeat; */
+        }
+
+        .btn-timeselect.on+.list-ordertime {
+            display: block;
+        }
+
+        .list-member li {
+        	list-style-type:circle;
+            height: 40px;
+            padding: 5px 8px;
+            box-sizing: border-box;
+        }
+
+        .list-ordertime li button {
+            width: 100%;
+            padding: 7px 10px;
+            border: none;
+            background-color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            /* 말줄임 */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .list-ordertime li button:hover,
+        .list-ordertime li button:focus {
+            background-color: #F8E4FF;
+        }
 
 .order_title img{
 width:160px;
@@ -338,39 +515,56 @@ height:100px;
 	
 }
 
+
 .ticket_bac1{
+	line-height:normal;
 margin-top:50px; 
   display : block;
   text-decoration : none;
   color : rgb(37, 37, 37);
   font-size: 15px;
-  padding : 12px 20px;
+ padding : 12px 20px; 
 	background-image:url("http://localhost:9000/gga_test2/images/ticket2.png");
 	background-repeat: no-repeat;
 	background-size: 1000px 300px;
 	height:300px;
 }
 .ticket_bac1 select:first-child{
-	margin-top:110px;
+	margin-top:130px;
 }
 .ticket_bac1 select{
+	display:inline-block;
+height:20pt;
 border:1px solid #ddd;
 color:gray;
-border-radius:4px;
-margin-left:80px;
+border-radius:3px;
+margin-left:20px;
 margin-top:20px;
+line-height: normal;
+vertical-align: middle;
 }
+
+	
 .ticket_bac1 input{
-margin-left:80px;
-margin-top:20px;
+	width:150px;
+	height:45px;
+margin-left:40px;
+margin-top:10px;
 border:1px solid #ddd;
-color:gray;
-border-radius:4px;
+border-radius:8px;
+padding:3px;
 }
+.ticket_bac1 input:hover,.ticket_bac1 input:focus{
+	
+border: 1px solid #9B51E0;
+outline: 3px solid #F8E4FF;
+}
+
+
 .ticket_price{
-margin-left:80px;
-margin-top:20px;
-color:gray;
+	display:inline-block;
+	margin-left:550px;
+	margin-top:40px;
 }
 
 .ticket_bac2{
@@ -462,14 +656,13 @@ width:250px;
 height:100px;
 
 }
-
 .ticketcon_bac1{
   margin-top:50px;
   display : block;
   text-decoration : none;
   color : rgb(37, 37, 37);
   font-size: 15px;
-  padding : 12px 20px;
+ 	padding : 12px 20px; 
 	background-image:url("http://localhost:9000/gga_test2/images/ticket2.png");
 	background-repeat: no-repeat;
 	background-size: 1000px 300px;
@@ -637,9 +830,9 @@ height:100px;
 	
 }
 
-* {
+ * {
 	margin:0px; padding:0px;
-}
+} 
 /* .bd-placeholder-img {
    font-size: 1.125rem;
    text-anchor: middle;
@@ -683,8 +876,8 @@ height:100px;
 .nav-scroller .nav {
    display: flex;
    flex-wrap: nowrap;
-   padding-bottom: 1rem;
-   margin-top: -1px;
+  padding-bottom: 1rem; 
+   margin-top: -1px; 
    overflow-x: auto;
    text-align: center;
    white-space: nowrap;
@@ -701,10 +894,10 @@ a{
  	margin-left:10px;
 }
 
-.a1{
+ .a1{
 	padding:p-2;
 	color:secondary;
-}
+} 
 
 
 /*                      송지웅 : 영화 상세화면 : MovieInfo               */

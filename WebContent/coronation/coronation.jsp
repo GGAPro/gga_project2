@@ -13,27 +13,16 @@
 	<!-- header -->
 
 	<!-- content:송지웅  -->
-	<div class="content">
+	<div class="container">
+		<div class="ask_title">
+		<img src="http://localhost:9000/gga_test2/images/ask.png">
+		</div>
 		<section class="coron_1">
-			<div>
-				<img src="http://localhost:9000/test_gga/images/carcoronation.png">
-			</div>
-			<div class="con">
-				<p>광고&대관 문의</p>
-			</div>
 		</section>
+			<div class="corondetail">
+				<img src="http://localhost:9000/gga_test2/images/corondetail.png">
+			</div>
 		<section class="coron_2">
-			<div>
-				<p>자유로 자동차극장에서는 다양한 광고 프로젝트와
-					기업 행사, 단체 관람 이용이 가능합니다.</p>
-			</div>
-			<div>
-				<p>동호회, 기업, 학교, 소모임, 종교 행사 등
-					자유로 자동차극장에서 특별한 행사를 주최해보세요 !</p>
-			</div>
-			<div>
-				<p>궁금하신 사항은 위 연락처로 언제든지 문의주세요! 감사합니다!</p>
-			</div>
 			<div class="coron_input">
 				<ul>
 				<li>
