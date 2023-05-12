@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ page import = "com.gga.dao.NoticeDao" %>
+<%@ page import = "com.gga.vo.NoticeVo" %>
+    
+<%
+	String nid = request.getParameter("nid");
+	NoticeDao noticeDao = new NoticeDao();
+	NoticeVo noticeVo = noticeDao.select(nid);
+%>  
+  
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,7 +91,7 @@ function writeReset(){
 	<div class="container text-center">
 		<section class="admin_notice">
 			<h1>관리자 - 공지사항</h1>
-			<form name="writeForm" action="#"  method="get">
+			<form name="writeForm" action="admin_noticeUpdateProc"  method="post">
 				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
