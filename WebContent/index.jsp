@@ -21,7 +21,7 @@
 @media (min-width: 992px) {
   .container {
     width: 1000px;
-  }
+  }  
 }
 .section2{
 	display: flex;

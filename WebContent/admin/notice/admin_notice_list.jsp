@@ -1,5 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ page import = "com.gga.dao.NoticeDao" %>
+<%@ page import = "com.gga.vo.NoticeVo" %>
+<%@ page import = "java.util.ArrayList" %>
+
+<%
+	NoticeDao noticeDao = new NoticeDao();
+	ArrayList<NoticeVo> list = noticeDao.select();
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,66 +90,14 @@ table tr:first-child {
 					<th>조회수</th>
 					<th>작성일자</th>
 				</tr>
+				<% for(NoticeVo noticeVo : list) { %>
 				<tr>
-					<td>1</td>
-					<td><a href="admin_notice_content.jsp">[전주객사]제24회 전주국제영화제 개최 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
+					<td><%= noticeVo.getRno() %></td>
+					<td><a href="admin_notice_content.jsp?nid=<%= noticeVo.getNid() %>"><%= noticeVo.getNtitle() %></a></td>
+					<td><%= noticeVo.getNhits() %></td>
+					<td><%= noticeVo.getNdate() %></td>
 				</tr>
-				<tr>
-					<td>2</td>
-					<td><a>[상암월드컵경기장]23년 5월 축구 경기 일정에 따른 주차 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td><a>[수원] 우대 요금 변경 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td><a>[사건 읽는 영화관] 프로그램 순서 변경 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td><a>[청라지젤] 운영시간 임시 조정 안내(4/24~4/25)</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td><a>게임존 서비스 운영 잠정 중단 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td><a>[미사강변] 4월 15일 화재경보기 오작동 발생 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td><a>[코엑스]23년 4월 24일 <드림> 시사회 진행에 따른 고객 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>9</td>
-					<td><a>[상암월드컵경기장]23년 4월 22일(토) K리그 축구 경기에 따른 주차안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td><a>안드로이드 ‘메가박스 앱’ 정상화 안내</a></td>
-					<td>123</td>
-					<td>2023-04-27</td>
-				</tr>
+				<% } %>
 				<tr>
 					<td colspan="5">
 					<nav aria-label="Page navigation example">
