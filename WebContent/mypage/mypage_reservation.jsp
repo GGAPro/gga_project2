@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>마이페이지 - 내 예매 내역</title>
+<script src ="http://localhost:9000/gga_test2/js/jquery-3.6.4.min.js"></script>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css">
 </head>
 <body>

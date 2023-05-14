@@ -23,7 +23,27 @@
   }
 }
 </style>
-
+<script>
+	$(document).ready(function(){
+		$("#btnSearch").click(function(){
+			if($("#mtitle").val() =="" ){
+				alert("영화 제목을 입력해주세요.");
+				$("#mtitle").focus();
+				return false;
+			} else{
+				$.ajax({
+			          url:"http://localhost:9000/gga_test2/searchProc.jsp?mtitle="+$("#mtitle").val(),
+			          success: function(movieid){
+			            location.href="http://localhost:9000/gga_test2/movieinfo/movieinfo.jsp?movieid="+movieid; 
+			          },
+					error:function(){
+						alert("상영 예정 없는 영화입니다 다른검색어를 입력해주세요");
+					}
+				});
+			}
+		});
+	});
+</script>
 <body>
 	<!-- header -->
 	<header>
@@ -79,10 +99,8 @@
 				 </div>
 			</div>
 				      <div class="mov_search">
-				      <form class="d-flex" role="search">
-				          <input type="text" placeholder=" 영화 제목을 검색해 주세요.">
-				          <button type="button"><p>검색</p></button>
-				       </form>
+				          <input type="text" placeholder=" 영화 제목을 검색해 주세요." id="mtitle">
+				          <button type="submit" id="btnSearch"><p>검색</p></button>
 				     </div>
 			</div>
 		</div>

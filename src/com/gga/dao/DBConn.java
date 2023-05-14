@@ -18,7 +18,6 @@ public class DBConn {
 	public DBConn(){
 		try {
 			Class.forName(driver);
-			
 			conn = DriverManager.getConnection(url, user, pass);
 		} catch (Exception e) {
 			e.printStackTrace();

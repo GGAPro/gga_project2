@@ -5,8 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>gga_test2</title>
+<script src ="http://localhost:9000/gga_test2/js/jquery-3.6.4.min.js"></script>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src ="http://localhost:9000/gga_test2/js/jquery-3.6.4.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -90,7 +91,14 @@
 				width:160px;
 			}
 </style>
-
+<script>
+	$(document).ready(function(){
+		$("img").click(function(){
+			let movieid = $(this).attr("id");
+			$(location).attr("href", "http://localhost:9000/gga_test2/movieinfo/movieinfo.jsp?movieid="+movieid)
+		});
+	});
+</script>
 <body>
 	<!-- header -->
 	<header>
@@ -114,7 +122,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/demonslayer.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/knife.jpg" class="card-img-top" id="M_0006">
 					  <div class="card-body">
 					    <h5 class="card-title">귀멸의 칼날</h5>
 					    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -126,7 +134,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/interstellar.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/interstellar.jpg" class="card-img-top" id="M_0005">
 					  <div class="card-body">
 					    <h5 class="card-title">인터스텔라</h5>
 					    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -138,7 +146,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/1917.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/war.jpg" class="card-img-top" id="M_0013">
 					  <div class="card-body">
 					    <h5 class="card-title">1917</h5>
 					    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -150,7 +158,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/johnwick.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/wick.jpg" class="card-img-top" id="M_0014">
 					  <div class="card-body">
 					    <h5 class="card-title">존 윅 4</h5>
 					    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -165,7 +173,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="card">
-						  <img src="http://localhost:9000/gga_test2/images/topgun.jpg" class="card-img-top" alt="...">
+						  <img src="http://localhost:9000/gga_test2/images/topgun.jpg" class="card-img-top" id="M_0012">
 						  <div class="card-body">
 						    <h5 class="card-title">탑 건 : 매버릭</h5>
 						    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -177,7 +185,7 @@
 					</div>
 					<div class="col">
 						<div class="card">
-						  <img src="http://localhost:9000/gga_test2/images/tenet.jpg" class="card-img-top" alt="...">
+						  <img src="http://localhost:9000/gga_test2/images/tenet.jpg" class="card-img-top" id="M_0011">
 						  <div class="card-body">
 						    <h5 class="card-title">테넷</h5>
 						    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -189,7 +197,7 @@
 					</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/supermario.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/supermario.jpg" class="card-img-top" id="M_0010">
 					  <div class="card-body">
 					    <h5 class="card-title">슈퍼마리오</h5>
 					    <p class="card-text">개봉예정일 : 2023.10.15<p>
@@ -201,7 +209,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/showman.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/show.jpg" class="card-img-top" id="M_0008">
 					  <div class="card-body">
 					    <h5 class="card-title">위대한 쇼맨</h5>
 					    <p class="card-text">개봉예정일 : 2023.10.15<p>

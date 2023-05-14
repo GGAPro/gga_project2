@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>gga_test2</title>
+<script src ="http://localhost:9000/gga_test2/js/jquery-3.6.4.min.js"></script>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />	
@@ -85,7 +85,14 @@
 			width:160px;
 			} 
 </style>
-
+<script>
+	$(document).ready(function(){
+		$("img").click(function(){
+			let movieid = $(this).attr("id");
+			$(location).attr("href", "http://localhost:9000/gga_test2/movieinfo/movieinfo.jsp?movieid="+movieid)
+		});
+	});
+</script>
 <body>
 	<!-- header -->
 	<header>
@@ -102,14 +109,12 @@
 		<nav class="buttons">
 		<a href="http://localhost:9000/gga_test2/movie/movie_menu.jsp"><img src="http://localhost:9000/gga_test2/images/moviechart.png" class="btn-outline-secondary"></a>
 		<a href="http://localhost:9000/gga_test2/movie/commingsoon.jsp"><img src="http://localhost:9000/gga_test2/images/commingsoon2.png" class="btn-outline-secondary2"></a>
-			<!-- <button type="button" class="btn btn-outline-secondary" id="moviechart"><a href="http://localhost:9000/gga_test2/movie/movie_menu.jsp">무비차트</a></button>
-			<button type="button" class="btn btn-outline-secondary"><a href="http://localhost:9000/gga_test2/movie/commingsoon.jsp">커밍쑨</a></button> -->
 		</nav>
 		<nav class="menu1">
 			<div class="row">
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/inception.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/inception.jpg" class="card-img-top" id="M_0004">
 					  <div class="card-body">
 					    <h5 class="card-title">인셉션</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -124,7 +129,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/darkknight.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/darknight.jpg" class="card-img-top" id="M_0001">
 					  <div class="card-body">
 					    <h5 class="card-title">다크 나이트 라이즈</h5>
 					    <p class="card-text">개봉일 : 2020.01.01</p>
@@ -140,7 +145,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/suzume.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/door.jpg" class="card-img-top" id="M_0002">
 					  <div class="card-body">
 					    <h5 class="card-title">스즈메의 문단속</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -160,7 +165,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/rings.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/ringsking.jpg" class="card-img-top" id="M_0007">
 					  <div class="card-body">
 					    <h5 class="card-title">반지의 제왕</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -175,7 +180,7 @@
 				</div>
 				<div class="col">
 					<div class="card">
-					  <img src="http://localhost:9000/gga_test2/images/dune.jpg" class="card-img-top" alt="...">
+					  <img src="http://localhost:9000/gga_test2/images/dune.jpg" class="card-img-top" id="M_0003">
 					  <div class="card-body">
 					    <h5 class="card-title">듄</h5>
 					    <p class="card-text">개봉일 : 2020.01.01<p>
@@ -190,7 +195,7 @@
 				</div>
 				<div class="col">
 				<div class="card" >
-				  <img src="http://localhost:9000/gga_test2/images/slamdunk.jpg" class="card-img-top" alt="...">
+				  <img src="http://localhost:9000/gga_test2/images/slamdunk.jpg" class="card-img-top" id="M_0009">
 				  <div class="card-body">
 				    <h5 class="card-title">더 퍼스트 슬램덩크</h5>
 				    <p class="card-text">개봉일 : 2020.01.01<p>

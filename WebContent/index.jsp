@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>gga_test2</title>
+<script src ="http://localhost:9000/gga_test2/js/jquery-3.6.4.min.js"></script>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -43,19 +43,24 @@
 .section2 img{
 	height:230px;
 }
-
 .section4{
     margin-top: 20px;
 }
 </style>
-
+<script>
+	$(document).ready(function(){
+		$("img").click(function(){
+			let movieid = $(this).attr("id");
+			$(location).attr("href", "http://localhost:9000/gga_test2/movieinfo/movieinfo.jsp?movieid="+movieid)
+		});
+	});
+</script>
 <body>
 	<!-- header -->
 		<jsp:include page="header.jsp" />
 	<!-- header -->
 	
-	
-	<!-- content -->
+		<!-- content -->
 	<div class="container text-center">
 		<div class="section1">
 			<div class="col" >
@@ -74,9 +79,8 @@
 		 	<div class="row row-cols-1 row-cols-md-5 mb-5 justify-content-center">
 		 		<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			    		<a href="http://localhost:9000/gga_test2/movieinfo/johnwick2.jsp">
-				        	<img src="http://localhost:9000/gga_test2/images/darkknight.jpg" 
-				        		class="card-img-top" alt="..."></a>
+				        	<img src="http://localhost:9000/gga_test2/images/darknight.jpg" 
+				        		class="card-img-top" id="M_0001">
 			        	<div class="card-body">
 			          	<p class="card-text">다크나이트</p>
 			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
@@ -87,7 +91,7 @@
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
 			        	<img src="http://localhost:9000/gga_test2/images/dune.jpg" 
-			        		class="card-img-top" alt="...">
+			        		class="card-img-top" id="M_0003">
 			        	<div class="card-body">
 			          	<p class="card-text">듄</p>
 			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
@@ -98,7 +102,7 @@
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
 			        	<img src="http://localhost:9000/gga_test2/images/inception.jpg" 
-			        		class="card-img-top" alt="...">
+			        		class="card-img-top" id="M_0004">
 			        	<div class="card-body">
 			          	<p class="card-text">인셉션</p>
 			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
@@ -109,7 +113,7 @@
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
 			        	<img src="http://localhost:9000/gga_test2/images/slamdunk.jpg" 
-			        		class="card-img-top" alt="...">
+			        		class="card-img-top" id="M_0009">
 			        	<div class="card-body">
 			          	<p class="card-text">슬램덩크</p>
 			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
@@ -119,8 +123,8 @@
 		    	</div>
 		    	<div class="col">
 			    	<div class="card mb-4 rounded-3 shadow-sm">
-			        	<img src="http://localhost:9000/gga_test2/images/suzume.jpg" 
-			        		class="card-img-top" alt="...">
+			        	<img src="http://localhost:9000/gga_test2/images/door.jpg" 
+			        		class="card-img-top" id="M_0002">
 			        	<div class="card-body">
 			          	<p class="card-text">스즈메</p>
 			          	<a href="http://localhost:9000/gga_test2/order/order.jsp" class="orderbtn">
