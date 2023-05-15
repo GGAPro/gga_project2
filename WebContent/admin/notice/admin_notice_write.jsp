@@ -27,26 +27,26 @@ section.admin_notice table {
 	text-align:center;
 	margin:auto;
 }
-.binput{
+.ninput{
 	width:95%;
 	border-color:#ddd;
 }
-.btextarea{
+.ntextarea{
 	width:95%;
 	border-color:#ddd;
 }
 </style>
 <script>
 function writeCheck(){
-	let btitle = document.getElementById("btitle");
-	let btextarea = document.getElementById("btextarea");
-	if(btitle.value == ""){
+	let ntitle = document.getElementById("ntitle");
+	let ntextarea = document.getElementById("ntextarea");
+	if(ntitle.value == ""){
 		alert("제목를 작성해주세요");
-		btitle.focus();
+		ntitle.focus();
 		return false;
-	} else if(btextarea.value == 0) {
+	} else if(ntextarea.value == 0) {
 		alert("내용를 작성해주세요");
-		btextarea.focus();
+		ntextarea.focus();
 		return false;
 	} else {
 		writeForm.submit();
@@ -55,8 +55,8 @@ function writeCheck(){
 
 
 function writeReset(){
-	document.getElementById("btitle").value = "";
-	document.getElementById("btextarea").value = "";
+	document.getElementById("ntitle").value = "";
+	document.getElementById("ntextarea").value = "";
 	document.getElementById("id").focus;
 }
 </script>
@@ -72,18 +72,18 @@ function writeReset(){
 	<div class="container text-center">
 		<section class="admin_notice">
 			<h1>관리자 - 공지사항</h1>
-			<form name="writeForm" action="#"  method="get">
+			<form name="writeForm" action="admin_noticeWriteProc"  method="post">
 				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
 						<td colspan="3">
-							<input type="text" name="btitle" class="binput" id="btitle">
+							<input type="text" name="ntitle" class="ninput" id="ntitle">
 						</td>
 					</tr>
 					<tr>
 						<th>내용</th>
 						<td colspan="3">
-							<textarea rows="20" cols="80%" name="bcontent" class="btextarea" id="btextarea"></textarea>
+							<textarea rows="20" cols="80%" name="ncontent" class="ntextarea" id="ntextarea"></textarea>
 						</td>
 					</tr>					
 					<tr>

@@ -15,7 +15,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GGA_Test1</title>
+<title>GGA_Test2</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test1/css/gga.css"> <!-- gga.css -->
 <script src="http://localhost:9000/gga_test1/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -38,26 +38,26 @@ section.admin_notice table {
 	text-align:center;
 	margin:auto;
 }
-.binput{
+.ninput{
 	width:95%;
 	border-color:#ddd;
 }
-.btextarea{
+.ntextarea{
 	width:95%;
 	border-color:#ddd;
 }
 </style>
 <script>
 function writeCheck(){
-	let btitle = document.getElementById("atitle");
-	let btextarea = document.getElementById("atextarea");
-	if(btitle.value == ""){
+	let ntitle = document.getElementById("atitle");
+	let ntextarea = document.getElementById("atextarea");
+	if(ntitle.value == ""){
 		alert("제목를 작성해주세요");
-		btitle.focus();
+		ntitle.focus();
 		return false;
-	} else if(btextarea.value == 0) {
+	} else if(ntextarea.value == 0) {
 		alert("내용를 작성해주세요");
-		btextarea.focus();
+		ntextarea.focus();
 		return false;
 	} else {
 		writeForm.submit();
@@ -96,13 +96,13 @@ function writeReset(){
 					<tr>
 						<th>제목</th>
 						<td colspan="3">
-							<input type="text" name="btitle" class="binput" id="atitle">
+							<input type="text" name="ntitle" class="ninput" id="atitle">
 						</td>
 					</tr>
 					<tr>
 						<th>내용</th>
 						<td colspan="3">
-							<textarea rows="20" cols="80%" name="bcontent" class="btextarea" id="atextarea"></textarea>
+							<textarea rows="20" cols="80%" name="ncontent" class="ntextarea" id="atextarea"></textarea>
 						</td>
 					</tr>					
 					<tr>
