@@ -6,10 +6,16 @@
 <meta charset="UTF-8">
 <title>gga_test2</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
-<script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src="http://localhost:9000/mycgv_jsp/js/jquery-3.6.4.min.js"></script>
+<script src="http://localhost:9000/gga_test2/js/gga_jquery.js"></script> <!-- gga_jquery.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
+<%@ page import="java.net.URLEncoder" %>
+<%@ page import="java.security.SecureRandom" %>
+<%@ page import="java.math.BigInteger" %>
+<!-- 네이버 로그인 -->
+
 </head>
 <style>
 @media (min-width: 768px) {
@@ -39,25 +45,39 @@
 		<img src="http://localhost:9000/gga_test2/images/logintitle.png">
 		</div>
 		<section class="login">
-				<form name="loginForm" action="#" method="get" class="loginForm">
+				<form name="loginForm" action="loginProc.jsp" method="post" class="loginForm">
 					<ul>
 						<li>
 							<label>아이디</label>
-							<input type="text" name="id">
+							<input type="text" name="id" id="id">
 						</li>
 						<li>
 							<label>비밀번호</label>
-							<input type="password" name="pass">
+							<input type="password" name="pass" id="pass">
 						</li>
 						<li>
-							<a href= "http://localhost:9000/gga_test2/index.jsp">
-							<img src="http://localhost:9000/gga_test2/images/loginbtn.png"></a>
 							<a href= "http://localhost:9000/gga_test2/join/join.jsp">
 							<img src="http://localhost:9000/gga_test2/images/joinbtn.png"></a>
+							<img src="http://localhost:9000/gga_test2/images/loginbtn.png" id="btnLogin">
 						</li>
 						<li>
 							<span><a href="#">아이디 찾기></a></span>
 							<span><a href="#">비밀번호 찾기></a></span>
+						</li>
+						<li>
+							<h5>간편로그인</h5>
+							<%
+								String clientId = "A2fCGBIb5qkHcJ1fiBuE";//애플리케이션 클라이언트 아이디값";
+								String redirectURI = URLEncoder.encode("http://localhost:9000/test_gga/index.jsp", "UTF-8");
+								SecureRandom random = new SecureRandom();
+								String state = new BigInteger(130, random).toString();
+								String apiURL = "https://nid.naver.com/oauth2.0/authorize?response_type=code";
+								apiURL += "&client_id=" + clientId;
+								apiURL += "&redirect_uri=" + redirectURI;
+								apiURL += "&state=" + state;
+								session.setAttribute("state", state);
+							%>
+							<a href="<%=apiURL%>"><img height="40" src="http://static.nid.naver.com/oauth/small_g_in.PNG"/></a>
 						</li>
 					</ul>
 				</form>

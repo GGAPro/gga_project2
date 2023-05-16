@@ -121,8 +121,14 @@ font-size:11pt;
 	font-size:12pt;
 }
 /*******************************
- È¸¿ø°¡ÀÔ ÆäÀÌÁö
+ È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *************************************/
+
+form[name='joinForm'] ul #cmsg, form[name='joinForm'] ul #idCheck_msg {
+	/* border:1px solid red;  */
+	display:none;
+	margin:7px 0px 7px 170px; 
+}
 
 .join_title img{
 	width:350px;
@@ -209,7 +215,7 @@ font-size:11pt;
 }
 
 /*******************************
- ·Î±×ÀÎ ÆäÀÌÁö
+ ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *************************************/
   .container{
 	font-family: 'GangwonEdu_OTFBoldA';
@@ -259,6 +265,11 @@ font-size:11pt;
 	width:130px;
 	
 }
+.login ul li img{
+	margin-right:20px;
+	width:130px;
+	
+}
 .login ul li span a{
 	margin-right:20px;
 	font-size:15px;
@@ -275,13 +286,13 @@ font-size:11pt;
 	border-radius:4px;
 }
 /*******************************
- ¿¹¸Å ÆäÀÌÁö
+ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *************************************/
 
-/*                ´ë°ü¹®ÀÇ - ¼ÛÁö¿õ 05-02                            */
+/*                ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 05-02                            */
 
-/* ´ë°ü¹®ÀÇ - Ç¥Áö */
-div.content section.coron_1 { /* section °íÁ¤  */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - Ç¥ï¿½ï¿½ */
+div.content section.coron_1 { /* section ï¿½ï¿½ï¿½ï¿½  */
 	border:1px solid red;
 	width:1000px; height:600px;
 	margin:auto;
@@ -300,12 +311,12 @@ div.content section.coron_1 div.con {
 	text-align:center;
 	margin-top:130px;
 }
-/* ´ë°ü¹®ÀÇ - ³»¿ë */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ */
 	.ask_title img{
 	width:300px;
 	height:100px;
 	}
-div.container section.coron_2 { /* section °íÁ¤  */
+div.container section.coron_2 { /* section ï¿½ï¿½ï¿½ï¿½  */
 	width:1000px; height:300px;
 	margin:auto;
 	position:relative;
@@ -341,7 +352,7 @@ div.container section.coron_2 div:nth-child(4) {
 }
 
 
-/*¿¹¸Å*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 
  		.cont-select {
  		display:inline-block;
@@ -364,7 +375,7 @@ div.container section.coron_2 div:nth-child(4) {
             cursor: pointer;
             text-align: left;
         /*     background: url("images/icon-Triangle-down.png") center right 14px no-repeat; */
-            /* ¸»ÁÙÀÓ */
+            /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -412,7 +423,7 @@ div.container section.coron_2 div:nth-child(4) {
             border-radius: 8px;
             cursor: pointer;
             text-align: left;
-            /* ¸»ÁÙÀÓ */
+            /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -445,7 +456,7 @@ div.container section.coron_2 div:nth-child(4) {
             cursor: pointer;
             text-align: left;
         /*     background: url("images/icon-Triangle-down.png") center right 14px no-repeat; */
-            /* ¸»ÁÙÀÓ */
+            /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -493,7 +504,7 @@ div.container section.coron_2 div:nth-child(4) {
             border-radius: 8px;
             cursor: pointer;
             text-align: left;
-            /* ¸»ÁÙÀÓ */
+            /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -648,7 +659,7 @@ border-radius:4px;
 	
 }
 /**********************************
- ¿¹¸Å¿Ï·á ÆäÀÌÁö
+ ï¿½ï¿½ï¿½Å¿Ï·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *************************************/
 
 .ordercon_title img{
@@ -715,7 +726,7 @@ margin-top:15px;
 }
 
 /***************************
-	°Ô½ÃÆÇ ÆäÀÌÁö
+	ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************/
 .writebtn img{
 	width:110px;
@@ -731,7 +742,7 @@ margin-top:15px;
 	height:100px;
 	}
 /***************************
-	°øÁö»çÇ×
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************/
 .notice{
 	margin-top:30px;
@@ -744,7 +755,7 @@ margin-top:15px;
 	margin-top:30px;
 }
 /***************************
-	´ë°ü¹®ÀÇ
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************/
 .coron_2{
 	font-family: 'GangwonEdu_OTFBoldA';
@@ -783,7 +794,7 @@ margin-top:15px;
 }
 
 /***************************
-	¿µÈ­ ÆäÀÌÁö
+	ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 *****************************/
 
 
@@ -908,10 +919,10 @@ a{
 	color:secondary;
 } 
 
-/*                      ¼ÛÁö¿õ : ¿µÈ­ »ó¼¼È­¸é : MovieInfo               */
+/*                      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½È­ ï¿½ï¿½È­ï¿½ï¿½ : MovieInfo               */
 
 /* section 1 */
-div.content section.movie_info1 { /* section °íÁ¤  */
+div.content section.movie_info1 { /* section ï¿½ï¿½ï¿½ï¿½  */
 	/* border:1px solid red; */
 	width:1000px; height:800px;
 	margin:auto;
@@ -921,10 +932,10 @@ div.content section.movie_info1 div { /* div relative */
 	 position:relative; 
 	display:inline-block;
 }
-div.content section.movie_info1 div img { /* ¸ÞÀÎ Æ÷½ºÅÍ ÀÌ¹ÌÁö default:Á¸À¨4*/
+div.content section.movie_info1 div img { /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ default:ï¿½ï¿½ï¿½ï¿½4*/
 	width:400px;
 }
-div.content section.movie_info1 div:nth-child(2) { /* Á¦¸ñ,°¨µ¶µî »ó¼¼ Á¤º¸ Ç×¸ñ */
+div.content section.movie_info1 div:nth-child(2) { /* ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ */
 	position:relative;
 	display:inline-block;
 	padding:20px;
@@ -933,11 +944,11 @@ div.content section.movie_info1 div:nth-child(2) { /* Á¦¸ñ,°¨µ¶µî »ó¼¼ Á¤º¸ Ç×¸ñ
 	bottom:30%;
 	width:150px; height:650px;
 }
-div.content section.movie_info1 div:nth-child(2) nav ul li{ /* »ó¼¼Á¤º¸ ±Û¾¾ µðÀÚÀÎ */
+div.content section.movie_info1 div:nth-child(2) nav ul li{ /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	padding:5px;
 	list-style-type:none;
 }
-div.content section.movie_info1 div:nth-child(2) nav ul li label { /* »ó¼¼Á¤º¸ ¶óº§ µðÀÚÀÎ */
+div.content section.movie_info1 div:nth-child(2) nav ul li label { /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	display:inline-block;
 	color:black;
 	border-radius:4px;
@@ -951,12 +962,12 @@ div.content section.movie_info1 div:nth-child(2) nav ul li label { /* »ó¼¼Á¤º¸ ¶
 	clear:both;
 	background:lightgray;
 }
-div.content section.movie_info1 div:last-child { /* ¿¹¸ÅÇÏ±â ¹öÆ° À§Ä¡  */
+div.content section.movie_info1 div:last-child { /* ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½Ä¡  */
 	display:block;
 	margin-left:100px;
 	padding:20px;
 }
-div.content section.movie_info1 div:last-child button { /* ¿¹¸ÅÇÏ±â ¹öÆ° µðÀÚÀÎ */
+div.content section.movie_info1 div:last-child button { /* ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	border:3px double white;
 	padding:5px 40px;
 	background:tomato;
@@ -964,15 +975,15 @@ div.content section.movie_info1 div:last-child button { /* ¿¹¸ÅÇÏ±â ¹öÆ° µðÀÚÀÎ 
 	color:white;
 	font-size:16pt;
 }
-div.content section.movie_info1 div:last-child button:hover { /* ¿¹¸ÅÇÏ±â ¹öÆ° ÀÌº¥Æ® */
+div.content section.movie_info1 div:last-child button:hover { /* ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½Æ° ï¿½Ìºï¿½Æ® */
 	background:red;
 }
-div.content section.movie_info1 div:nth-child(3) { /* »ó¼¼Á¤º¸ ³»ºÎ ³»¿ë */
+div.content section.movie_info1 div:nth-child(3) { /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 	width:300px; height:700px;
 	margin-top:10px;
 	margin-left:10px;
 }
-div.content section.movie_info1 div:nth-child(3) table { /* ³»ºÎ ³»¿ë Å×ÀÌºí »çÀÌÁî */
+div.content section.movie_info1 div:nth-child(3) table { /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 	padding:2px;
 	height:90%;
 	margin-top:70px;
@@ -985,7 +996,7 @@ div.content section.movie_info1 div:nth-child(3) tr {
 
 /* section 2 */
 
-div.content section.movie_info2 { /* section °íÁ¤  */
+div.content section.movie_info2 { /* section ï¿½ï¿½ï¿½ï¿½  */
 	/* border:1px solid orange; */
 	width:1000px; height:800px;
 	margin:auto;
@@ -997,7 +1008,7 @@ div.content section.movie_info2 div:first-child {
 	padding:10px;
 	margin:50px 0; 
 }
-div.content section.movie_info2 td {	/*  ÁÂÃø ¿µÈ­¼³¸í ºÎºÐ */
+div.content section.movie_info2 td {	/*  ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ */
 	text-align:center;
 	width:1000px; height:180px;
 	margin-left:80px;
@@ -1006,44 +1017,44 @@ div.content section.movie_info2 td {	/*  ÁÂÃø ¿µÈ­¼³¸í ºÎºÐ */
 div.content section.movie_info2 table{
 	margin:auto;	
 }
-/* div.content section.movie_info2 div:first-child { ¿µÈ­¼³¸í Å×ÀÌºí »çÀÌÁî 
+/* div.content section.movie_info2 div:first-child { ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 	width:1150px; height:200px;
 	padding:10px;
 	margin:50px;
 }
 div.content section.movie_info2 div:first-child table { 
 }
-div.content section.movie_info2 td {   ¿ìÃø ¿µÈ­³»¿ë ºÎºÐ 
+div.content section.movie_info2 td {   ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ 
 	padding:80px;
 	width:800px;
 }
-div.content section.movie_info2 th {	ÁÂÃø ¿µÈ­¼³¸í ºÎºÐ
+div.content section.movie_info2 th {	ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È­ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½
 	padding:50px;
 } */
-div.content section.movie_info2 div:nth-child(2) iframe { /* ¿¹°íÆí ¿µ»ó À§Ä¡ */ /* Å©±â´Â ÇÁ·¹ÀÓ ¾È¿¡  */
+div.content section.movie_info2 div:nth-child(2) iframe { /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ */ /* Å©ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½È¿ï¿½  */
 	margin:0px;
 }
 
 /*               section 3                */
-div.content section.movie_info3 { /* section °íÁ¤  */
+div.content section.movie_info3 { /* section ï¿½ï¿½ï¿½ï¿½  */
 	/* border:1px solid yellow; */
 	width:1000px; height:400px;
 	margin:auto;
 }
 
-div.content section.movie_info3 div { /* ÀÌ¹ÌÁö ¹Ú½º À§Ä¡  */
+div.content section.movie_info3 div { /* ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Ú½ï¿½ ï¿½ï¿½Ä¡  */
 	display:inline-block;
 	margin:100px 0px;
 	float:left;
 
 }
-div.content section.movie_info3 div img { /* ÀÌ¹ÌÁö ºÒÅõ¸íÃ³¸® */
+div.content section.movie_info3 div img { /* ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ */
 	opacity:0.7;
 }
-div.content section.movie_info3 div img:hover { /* ÀÌ¹ÌÁö ÀÌº¥Æ® Ã³¸® */
+div.content section.movie_info3 div img:hover { /* ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Ìºï¿½Æ® Ã³ï¿½ï¿½ */
 	opacity:1.0;
 }
-.still_cut { /* ½ºÆ¿ÄÆ ±Û¾¾ */
+.still_cut { /* ï¿½ï¿½Æ¿ï¿½ï¿½ ï¿½Û¾ï¿½ */
 	/* border:3px double red;
 	position:relative; */
 	margin:0 auto;
@@ -1059,33 +1070,33 @@ div.content section.movie_info3 div img:hover { /* ÀÌ¹ÌÁö ÀÌº¥Æ® Ã³¸® */
 }
 
 /*                
-                 ³¯¾¾ API 05-10 ¼ÛÁö¿õ : content section 4 Áöµµ api ¼öÁ¤ & ³¯¾¾ API Ãß°¡   
+                 ï¿½ï¿½ï¿½ï¿½ API 05-10 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : content section 4 ï¿½ï¿½ï¿½ï¿½ api ï¿½ï¿½ï¿½ï¿½ & ï¿½ï¿½ï¿½ï¿½ API ï¿½ß°ï¿½   
 */
 
-div.section4 div#map { /* Áöµµ  */
+div.section4 div#map { /* ï¿½ï¿½ï¿½ï¿½  */
 	border: 4px groove powderblue;
 	border-radius : 5px;
 }
-div.section4 div.col-3{ /* ³¯¾¾¿µ¿ª div */
+div.section4 div.col-3{ /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ div */
 	position:relative;
 	float:left;
 	width:450px;
 	left:10px;
 }
-div.section4 div.col-9 { /* Áöµµ¿µ¿ª  div */
+div.section4 div.col-9 { /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  div */
 	width:550px;
 }
-div.section4 div.weather_api { /* api¿µ¿ª div */
+div.section4 div.weather_api { /* apiï¿½ï¿½ï¿½ï¿½ div */
 	border:4px groove #0080c0;
 	border-radius : 5px;
 	background: #0080c0;
 	height:50%;
 }
-div.section4 div.weather_api div.weather_icon { /* ³¯¾¾ ¾ÆÀÌÄÜ div */
+div.section4 div.weather_api div.weather_icon { /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ div */
 	width:120px; height:120px;
 	margin:10px 0px 0px 30px;
 }
-div.section4 div.weather_api div button { /* ³¯Â¥ ¹öÆ° */
+div.section4 div.weather_api div button { /* ï¿½ï¿½Â¥ ï¿½ï¿½Æ° */
 	border:1px groove #0080c0;
 	display: inline-block;
 	background:#0080c0;
@@ -1095,30 +1106,30 @@ div.section4 div.weather_api div button { /* ³¯Â¥ ¹öÆ° */
 	font-weight:700;
 	float:left;
 }
-div.section4 div.weather_api div button:hover { /* ³¯Â¥ ¹öÆ° ÀÌº¥Æ® */
+div.section4 div.weather_api div button:hover { /* ï¿½ï¿½Â¥ ï¿½ï¿½Æ° ï¿½Ìºï¿½Æ® */
 	color: blue;
 }
-div.section4 div.weather_api img { /* ³¯¾¾ ¾ÆÀÌÄÜ  */
+div.section4 div.weather_api img { /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  */
 	width:120px; height:120px;
 }
-div.section4 div#weather_icon div:nth-child(2) { /* ³¯¾¾ ¿µ¿ª div  */
+div.section4 div#weather_icon div:nth-child(2) { /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ div  */
 	position:relative;
 	bottom:120px; left:100px;
 	width:200%; float:left;
 	height:110%;
 }
-div.section4 div#weather_icon div#weather_info ul li{ /* ³¯¾¾ »ó¼¼ °øÅë */
+div.section4 div#weather_icon div#weather_info ul li{ /* ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 	list-style-type:none;
 	text-align:left;	
 	color:white;
 	margin:5px 0px;
 }
 div.section4 div#weather_icon div#weather_info ul li:nth-child(2),
-div.section4 div#weather_icon div#weather_info ul li:nth-child(3) { /* ³¯¾¾, Ç³¼Ó  */
+div.section4 div#weather_icon div#weather_info ul li:nth-child(3) { /* ï¿½ï¿½ï¿½ï¿½, Ç³ï¿½ï¿½  */
 	font-style:italic;
 	font-weight:200;
 }
-div.section4 div#weather_icon div#weather_info ul li:first-child { /* ±â¿Â */
+div.section4 div#weather_icon div#weather_info ul li:first-child { /* ï¿½ï¿½ï¿½ */
 	font-size:29pt;
 	font-weight:700;
 }
