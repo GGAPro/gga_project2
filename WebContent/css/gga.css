@@ -899,7 +899,6 @@ a{
 	color:secondary;
 } 
 
-
 /*                      송지웅 : 영화 상세화면 : MovieInfo               */
 
 /* section 1 */
@@ -1049,6 +1048,72 @@ div.content section.movie_info3 div img:hover { /* 이미지 이벤트 처리 */
 	color:red;
 	text-align:center; */
 }
+
+/*                
+                 날씨 API 05-10 송지웅 : content section 4 지도 api 수정 & 날씨 API 추가   
+*/
+
+div.section4 div#map { /* 지도  */
+	border: 4px groove powderblue;
+	border-radius : 5px;
+}
+div.section4 div.col-3{ /* 날씨영역 div */
+	position:relative;
+	float:left;
+	width:450px;
+	left:10px;
+}
+div.section4 div.col-9 { /* 지도영역  div */
+	width:550px;
+}
+div.section4 div.weather_api { /* api영역 div */
+	border:4px groove #0080c0;
+	border-radius : 5px;
+	background: #0080c0;
+	height:50%;
+}
+div.section4 div.weather_api div.weather_icon { /* 날씨 아이콘 div */
+	width:120px; height:120px;
+	margin:10px 0px 0px 30px;
+}
+div.section4 div.weather_api div button { /* 날짜 버튼 */
+	border:1px groove #0080c0;
+	display: inline-block;
+	background:#0080c0;
+	margin: 0px 5px 0px 10px;
+	font-size:12pt;
+	color:white;
+	font-weight:700;
+	float:left;
+}
+div.section4 div.weather_api div button:hover { /* 날짜 버튼 이벤트 */
+	color: blue;
+}
+div.section4 div.weather_api img { /* 날씨 아이콘  */
+	width:120px; height:120px;
+}
+div.section4 div#weather_icon div:nth-child(2) { /* 날씨 영역 div  */
+	position:relative;
+	bottom:120px; left:100px;
+	width:200%; float:left;
+	height:110%;
+}
+div.section4 div#weather_icon div#weather_info ul li{ /* 날씨 상세 공통 */
+	list-style-type:none;
+	text-align:left;	
+	color:white;
+	margin:5px 0px;
+}
+div.section4 div#weather_icon div#weather_info ul li:nth-child(2),
+div.section4 div#weather_icon div#weather_info ul li:nth-child(3) { /* 날씨, 풍속  */
+	font-style:italic;
+	font-weight:200;
+}
+div.section4 div#weather_icon div#weather_info ul li:first-child { /* 기온 */
+	font-size:29pt;
+	font-weight:700;
+}
+
 
 /***************************
 	footer

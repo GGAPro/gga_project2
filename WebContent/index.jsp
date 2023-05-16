@@ -7,6 +7,8 @@
 <title>gga_test2</title>
 <script src ="http://localhost:9000/gga_test2/js/jquery-3.6.4.min.js"></script>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/js/gga_jquery.js"></script>
+<script src="http://localhost:9000/gga_test2/js/weather_api.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -181,6 +183,17 @@
 			      <div id="map" style="width:100%; height:400px;"></div>
 			    </div>
 			    <div class="col-3">
+				    <div class="weather_api"> 
+			    	<div>
+			    		<button type="button" class="btn_weather_date" id="today">오늘</button>
+			    		<button type="button" class="btn_weather_date" id="tomorrow">+1</button>
+			    		<button type="button" class="btn_weather_date" id="after">+2</button>
+						<div class="weather_icon" id="weather_icon">
+						<!-- 날씨API 들어가는 자리 -->
+						</div>			    	
+			    	</div>
+			    	
+			    	</div>
 			    	<div class="card mb-4 rounded-3 shadow-sm">
 			        	<div class="card-body">
 			          	<p class="card-text">차타고 오세용</p>

@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="com.gga.dao.BoardDao"%>
+<%@ page import="com.gga.vo.BoardVo"%>
+<%@ page import="java.util.ArrayList" %>
+    
+<%	
+	String bid = request.getParameter("bid");
+	BoardDao boardDao = new BoardDao();
+	ArrayList<BoardVo> list = boardDao.select();
+	String sid = String.valueOf(session.getAttribute("sid"));
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +18,7 @@
 <title>gga_test2</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
 <script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src="http://localhost:9000/gga_test2/js/gga_jquery.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
 	<!-- 부트스트랩 -->
@@ -86,72 +98,18 @@ img {
 					<th>작성자</th>
 					<th>작성일자</th>
 				</tr>
+				<% for(BoardVo boardVo : list) { %>
 				<tr>
-					<td>1</td>
-					<td><a href="board_content.jsp">스즈메 문단속 재밌어요~^^</a></td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
+					<td><%=boardVo.getRno() %></td>
+					<td><a href="board_content.jsp?bid=<%= boardVo.getBid() %>"><%=boardVo.getBtitle() %></a></td>
+					<td><%=boardVo.getViews() %></td>
+					<td><%=boardVo.getMid() %></td>
+					<td><%=boardVo.getBdate() %></td>
 				</tr>
+				<% } %>
 				<tr>
 					<td>2</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>4</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>5</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>6</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>7</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>8</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>9</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
-					<td>123</td>
-					<td>hong1234</td>
-					<td>2023-04-10</td>
-				</tr>
-				<tr>
-					<td>10</td>
-					<td>스즈메 문단속 재밌어요~^^</td>
+					<td><a href="board_content.jsp?bid=본문엔 적용 완료">SQL 이 미완성이라 아무것도 안나오는게 정상입니다. DB데이터들 로그인체크 완료</a></td>
 					<td>123</td>
 					<td>hong1234</td>
 					<td>2023-04-10</td>

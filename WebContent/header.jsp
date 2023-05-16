@@ -23,7 +23,7 @@
   }
 }
 </style>
-<script>
+<!-- <script>
 	$(document).ready(function(){
 		$("#btnSearch").click(function(){
 			if($("#mtitle").val() =="" ){
@@ -43,7 +43,7 @@
 			}
 		});
 	});
-</script>
+</script> -->
 <body>
 	<!-- header -->
 	<header>

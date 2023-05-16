@@ -1,11 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="com.gga.dao.BoardDao"%>
+<%@ page import="com.gga.vo.BoardVo"%>   
+
+<%
+	String bid = request.getParameter("bid");
+	BoardDao boardDao = new BoardDao();
+	BoardVo boardVo = boardDao.select(bid);
+	String sid = (String)session.getAttribute("sid");
+	if(sid == null){
+		out.write("<script>");
+		out.write("alert('로그인 후 이용 가능합니다.')");
+		out.write("location.href=('http://localhost:9000/gga_test1/login/login.jsp');");
+		out.write("</script>");
+	}
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>gga_test2</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/jquery/jquery-3.6.4.min.js"></script>
+<script src="http://localhost:9000/gga_test2/js/gga_jquery.js"></script>
 <script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
 	rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
@@ -48,7 +66,7 @@ img{
 	cursor:pointer;
 }
 </style>
-<script>
+<!-- <script>
 function cdelete(){
 	if(window.confirm("정말로 삭제하시겠습니까?")){
 		
@@ -60,7 +78,7 @@ function cupdate(){
 		window.location.href="board_update.jsp";
 	}
 }
-</script>
+</script> 필요없는 부분임 팀원들한테 컨펌 받고 삭제할 예정 --> 
 <body>
 	<!-- header -->
 	<header>
@@ -73,34 +91,40 @@ function cupdate(){
 	<div class="container text-center">
 		<section class="board">
 			<h1>게시판</h1>
-			<form name="writeForm" action="#"  method="get">
+			<form name="contentForm" action="boardDeleteProc.jsp"  method="post">
 				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
-						<td>스즈메 문단속 재밌어요~^^</td>
+						<td><%=boardVo.getBtitle() %></td>
 					</tr>
 					<tr>
 						<th>내용</th>
 						<td>
-							스즈메 문단속 재밌어요~^^<br>
+							<%=boardVo.getBcontent() %><br>
 						</td>
 					</tr>
 					<tr>
+						<th>평점</th>
+						<td><%=boardVo.getScore() %></td>
+						
+					</tr>
+					<tr>
 						<th>조회수</th>
-						<td>1234</td>
+						<td><%=boardVo.getViews() %></td>
 					</tr>
 					<tr>
 						<th>작성자</th>
-						<td>hong1234</td>
+						<td><%=boardVo.getBid() %></td>
 					</tr>
 					<tr>
 						<th>작성일자</th>
-						<td>2023-04-10</td>
+						<td><%=boardVo.getBdate() %></td>
 					</tr>					
 					<tr>
 						<td colspan="4">
-							<img onclick="cupdate()" src="../images/editbtn.png"></a>
-							<img onclick="cdelete()" src="../images/deletebtn.png"></a>
+						<a href ="board_update.jsp?bid=<%= bid%>">
+							<img id="boardUpdate" src="../images/editbtn.png"></a>
+							<img id="boardDelete" src="../images/deletebtn.png">
 							<a href="board_list.jsp">
 								<img src="../images/listbtn.png"></a>
 

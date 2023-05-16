@@ -1,12 +1,30 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="com.gga.dao.BoardDao"%>
+<%@ page import="com.gga.vo.BoardVo"%>
+
+<%
+	String bid = request.getParameter("bid");
+	BoardDao boardDao = new BoardDao();
+	BoardVo boardVo = boardDao.select(bid);
+	String sid = (String)session.getAttribute("sid");
+	if(sid == null) {
+		out.write("<script>");
+		out.write("alert('로그인 후 이용 가능합니다. 기능점검완료 (주석처리)');");
+		/* out.write("location.href=('http://localhost:9000/gga_test1/login/login.jsp');"); */
+		out.write("</script>");
+/* 	}else { */
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>gga_test2</title>
 <link rel="stylesheet" href="http://localhost:9000/gga_test2/css/gga.css"> <!-- gga.css -->
+<script src="http://localhost:9000/gga_test2/jquery/jquery-3.6.4.min.js"></script>
 <script src="http://localhost:9000/gga_test2/js/gga_javascript.js"></script> <!-- gga_javascript.js -->
+<script src="http://localhost:9000/gga_test2/js/gga_jquery.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<!-- 부트스트랩 -->
@@ -36,7 +54,7 @@ section.board table {
 	border-color:#ddd;
 }
 </style>
-<script>
+<!-- <script>
 function writeCheck(){
 	let btitle = document.getElementById("btitle");
 	let bmovie = document.getElementById("bmovie");
@@ -77,7 +95,7 @@ function writeReset(){
 	document.getElementById("btextarea").value = "";
 	document.getElementById("id").focus;
 }
-</script>
+</script> 필요없는 부분 컨펌받고 삭제 할 예정 --> 
 <body>
 	<!-- header -->
 	<header>
@@ -90,12 +108,12 @@ function writeReset(){
 	<div class="container text-center">
 		<section class="board">
 			<h1>수정하기</h1>
-			<form name="writeForm" action="#"  method="get">
+			<form name="updateForm" action="boardUpdateProc.jsp"  method="post">
 				<table class="table table-bordered" style="width: 90%;">
 					<tr>
 						<th>제목</th>
 						<td colspan="3">
-							<input type="text" name="btitle" class="binput" id="btitle">
+							<input type="text" name="btitle" class="binput" id="btitle" value="<%= boardVo.getBtitle() %>">
 						</td>
 					</tr>
 					<tr>
@@ -126,14 +144,14 @@ function writeReset(){
 					<tr>
 						<th>내용</th>
 						<td colspan="3">
-							<textarea rows="20" cols="80%" name="bcontent" class="btextarea" id="btextarea"></textarea>
+							<textarea rows="20" cols="80%" name="bcontent" class="btextarea" id="btextarea"><%= boardVo.getBcontent() %></textarea>
 						</td>
 					</tr>					
 					<tr>
 						<td colspan="4">
-							<button class="btn btn-outline-secondary" type="button" onclick="writeCheck()">수정완료</button>
-							<button class="btn btn-outline-secondary" type="button" onclick="writeReset()">다시쓰기</button>
-							<a href="board_list.jsp">
+							<button class="btn btn-outline-secondary" type="button" id="btnBoardUpdate">수정완료</button>
+							<button class="btn btn-outline-secondary" type="button" id="btnBoardReset">다시쓰기</button>
+							<a href="board_content.jsp?bid=<%= bid%>">
 								<button class="btn btn-outline-secondary" type="button">이전으로</button></a>
 						</td>				
 					</tr>
@@ -154,3 +172,4 @@ function writeReset(){
 integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> <!-- 부트스트랩 -->
 </body>
 </html>
+<% } %>
