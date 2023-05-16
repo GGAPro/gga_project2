@@ -49,6 +49,11 @@
 		<section class="coron_3">
 		</section>
 	</div>
+	<div>
+		<section class="enroll">
+			<button type ="button">신청하기</button>
+		</section>
+	</div>
 
 	<!-- content:송지웅  -->
 

@@ -124,11 +124,13 @@ table tr:first-child {
 	<!-- content -->
 
 
+	
 	<!-- footer -->
 	<footer>
-		<iframe src="http://localhost:9000/gga_test1/footer.jsp"
-			scrolling="no" width="100%" height="600px" frameborder=0></iframe>	
+		<jsp:include page="../../footer.jsp" />
 	</footer>
+	<!-- footer -->
+	
 	<!-- footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
 	integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK
