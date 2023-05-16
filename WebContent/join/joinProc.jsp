@@ -12,7 +12,7 @@
 	if(result == 1){
 		out.write("<script>");
 		out.write("alert('회원가입 완료');");
-		out.write("localhost.href = 'http://localhost:9000/gga_test1/login/login.jsp'");
+		out.write("localhost.href = 'http://localhost:9000/gga_test2/login/login.jsp'");
 		out.write("</script>");
 	}
 %>
